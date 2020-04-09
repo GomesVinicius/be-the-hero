@@ -6,12 +6,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	
 }
 
 .new-incident-container .content {
 	width: 100%;
 	padding: 96px;
-	background: #f0f0f5;
+	background: rgb(15, 15, 15);
+	border-radius: 16px;
 	box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
 	display: flex;
 	justify-content: space-between;
@@ -26,12 +28,14 @@
 .new-incident-container .content section h1 {
 	margin: 64px 0 32px;
 	font-size: 32px;
+	color: #ffffff;
 }
 
 .new-incident-container .content section p {
 	font-size: 18px;
 	color: #737380;
 	line-height: 32px;
+	color: #ffffff;
 }
 
 .new-incident-container .content form {

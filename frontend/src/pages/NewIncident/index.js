@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import logoImg from '../../assets/logo.svg'
+import logoImg from '../../assets/logo_dm.svg'
 import { Link, useHistory } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
 
@@ -26,7 +26,7 @@ export default function NewIncident(){
             value
         }
 
-        if(!isNaN(value) && title && description && value != 0){
+        if(!isNaN(value) && title && description && value !== 0){
             try{
                 await api.post("/incidents", data, {
                     headers: { Authorization: ongId }
@@ -54,7 +54,7 @@ export default function NewIncident(){
 
                     <Link to="/profile" className="back-link">
                         <FiArrowLeft size={16} color="#E02041" />
-                        Voltar para home
+                        <p>Voltar para home</p>
                     </Link>
 
                 </section>

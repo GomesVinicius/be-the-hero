@@ -6,7 +6,7 @@ import api from '../../services/api'
 
 import './styles.css'
 
-import logoImg from '../../assets/logo.svg'
+import logoImg from '../../assets/logo_dm.svg'
 import heroesImg from '../../assets/heroes.png'
 
 export default function Logon(){
@@ -35,7 +35,7 @@ export default function Logon(){
                 <img src={logoImg} alt="Be The Hero" />
 
                 <form onSubmit={handleLogin}>
-                    <h1>Faça seu logon</h1>
+                    <h1 className="text">Faça seu logon</h1>
 
                     <input placeholder="Sua ID" 
                         value={id}
@@ -45,7 +45,7 @@ export default function Logon(){
                     
                     <Link to="/register" className="back-link">
                         <FiLogIn size={16} color="#E02041" />
-                        Não tenho cadastro
+                        <p className="text">{'\u00A0'}Não tenho cadastro</p>
                     </Link>
                 </form>
 

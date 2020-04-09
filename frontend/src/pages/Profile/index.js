@@ -4,7 +4,7 @@ import { FiPower, FiTrash2 } from 'react-icons/fi'
 
 import api from '../../services/api'
 
-import logoImg from '../../assets/logo.svg'
+import logoImg from '../../assets/logo_dm.svg'
 
 import './styles.css'
 
@@ -65,16 +65,16 @@ export default function Profile(){
                 {incidents.map( incident => (
                     <li key={incident.id}>
                         <strong>CASO:</strong>
-                        <p>{incident.title}</p>
+                        <p className="formatCase">{incident.title}</p>
 
                         <strong>DESCRIÇÃO:</strong>
-                        <p>{incident.description}</p>
+                        <p className="formatDescription">{incident.description}</p>
 
                         <strong>VALOR:</strong>
                         <p>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'}).format(incident.value)}</p>
 
                         <button onClick={() => handleDeleteIncident(incident.id)} type="button">
-                            <FiTrash2 size={20} color="#a8a8b3" />
+                            <FiTrash2 size={20} color="#000000" />
                         </button>
                     </li>
                 ))}

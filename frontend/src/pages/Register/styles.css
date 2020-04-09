@@ -11,11 +11,12 @@
 .register-container .content {
 	width: 100%;
 	padding: 96px;
-	background: #f0f0f5;
-	box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background: rgb(15, 15, 15);
+	border-radius: 16px;
+	box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
 }
 
 .register-container .content section {
@@ -26,12 +27,13 @@
 .register-container .content section h1 {
 	margin: 64px 0 32px;
 	font-size: 32px;
+	color: #ffffff;
 }
 
 .register-container .content section p {
 	font-size: 18px;
-	color: #737380;
 	line-height: 32px;
+	color: #ffffff;
 }
 
 .register-container .content form {
@@ -49,4 +51,14 @@
 
 .register-container .content .input-group input+input {
 	margin-left: 8px;
+}
+
+.register-container .content form select {
+    width: 20%;
+    height: 60px;
+    color: #333;
+    border: 1px solid #dcdce6;
+	border-radius: 8px;
+	margin-top: 8px;
+	margin-right: 2px;
 }
